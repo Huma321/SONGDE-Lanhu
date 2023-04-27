@@ -1,0 +1,55 @@
+@import './commons';
+// <*****************[CONTACT SEC]*****************
+.ts-contact {
+    margin: 0 200px;
+    @include md-down {
+        margin: 0 100px;
+    }
+    @include sm-down {
+        margin: 0 15px;
+    }
+    .ts-headings {
+        text-align: left;
+    }
+    .ts-text {
+        text-align: left;
+        font-weight: 350;
+        font-size: 11px;
+        margin: 0;
+    }
+    .ts-btn {
+        color: $ts-white-color;
+        background-color: $ts-Aqua-Forest-color;
+        border: none;
+        border-radius: 6px;
+        padding: 15px 131px;
+        &:hover {
+            color: $ts-Aqua-Forest-color;
+            background-color: $ts-white-color;
+            border: 1px solid $ts-Aqua-Forest-color;
+        }
+    }
+    .form-control {
+        background: transparent;
+        border-radius: 20px;
+        border: none;
+        margin-bottom: 15px;
+        padding: 4px 15px;
+        font-size: 11px;
+    }
+    .ts-row {
+        align-items: center;
+        margin: 12px 0;
+    }
+    .col {
+        margin-left: 2px;
+        padding: 0;
+        .ts-headings {
+            color: $ts-Aqua-Forest-color;
+            font-weight: bolder;
+        }
+    }
+    .col-1 {
+        padding: 0;
+    }
+}

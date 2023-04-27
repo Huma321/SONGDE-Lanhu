@@ -1,0 +1,106 @@
+@import "./commons";
+// <*****************[BG SECTION]*****************>
+.ts-content {
+    background-color: $ts-black-color;
+    max-width: 600px;
+    max-height: 150px;
+    padding: 200px 0px;
+    margin: auto;
+    position: relative;
+    opacity: 30%;
+}
+
+// <*****************[MAIN SECTION]*****************>
+.ts-exhibition-info {
+    margin: 20px 15%;
+    @include md-down {
+        margin: 20px 7%;
+    }
+    @include sm-down {
+        margin: 20px;
+    }
+    .ts-img {
+        width: 100%;
+    }
+    .ts-content-details {
+        margin-left: 60px;
+    }
+    .ts-headings-1 {
+        font-weight: bold;
+    }
+    .side-tabs {
+        float: left;
+        min-width: 180px;
+        @include sm-down {
+            float: none;
+        }
+        .ts-headings-side-tab {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .ts-side-grid {
+            .col {
+                text-align: center;
+                .product-img {
+                    object-fit: contain;
+                    max-width: 80px;
+                    @include xl-up {
+                        max-width: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ts-thumbnail-1 {
+    background-image: url('../assets/images/fjords.jpg');
+    width: 180px;
+    height: 110px;
+    object-fit: contain;
+    text-align: center;
+    background-repeat: no-repeat;
+    @include sm-down {
+        height: 250px;
+        ////////////////
+        width: 500px;
+        ////////////////
+        margin: auto;
+    }
+}
+
+.ts-thumbnail-2 {
+    background-image: url('../assets/images/lights.jpg');
+    width: 180px;
+    height: 110px;
+    object-fit: contain;
+    text-align: center;
+    background-repeat: no-repeat;
+    @include sm-down {
+        height: 250px;
+        ////////////////
+        width: 500px;
+        ////////////////
+        margin: auto;
+    }
+}
+
+.ts-thumbnail-3 {
+    background-image: url('../assets/images/nature.jpg');
+    width: 180px;
+    height: 110px;
+    object-fit: contain;
+    text-align: center;
+    background-repeat: no-repeat;
+    @include sm-down {
+        height: 250px;
+        ////////////////
+        width: 500px;
+        ////////////////
+        margin: auto;
+    }
+}
+
+.ts-content-1 {
+    font-size: 8px;
+}

@@ -1,0 +1,104 @@
+@import "./commons";
+// <*****************[BG IMAGE]*****************>
+.ts-content {
+    .ts-heading-2 {
+        font-size: 24px;
+    }
+    .ts-bg-text {
+        max-width: 550px;
+        text-align: center;
+    }
+    .ts-border {
+        width: 60px;
+    }
+}
+
+// <*****************[PAGINATION]*****************>
+@mixin pagination {
+    float: right;
+    a {
+        color: $ts-Aqua-Forest-color;
+        float: left;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+}
+
+// <*****************[PRODUCTS SECTION]*****************>
+.ts-products {
+    margin: 20px 15%;
+    @include md-down {
+        margin: 20px 7%;
+    }
+    @include sm-down {
+        margin: 20px;
+    }
+    .pagination {
+        @include pagination();
+    }
+    .ts-headings-3 {
+        font-size: 11px;
+        margin-top: 5px;
+    }
+    .ts-span {
+        color: $ts-Aqua-Forest-color;
+    }
+    .ts-products-container {
+        width: 100%;
+        .side-tabs {
+            float: left;
+            min-width: 180px;
+            @include sm-down {
+                float: none;
+            }
+            .ts-headings-4 {
+                color: $ts-Aqua-Forest-color;
+                border-left: 3px solid $ts-Aqua-Forest-color;
+            }
+            .list {
+                .active {
+                    color: $ts-white-color !important;
+                    background-color: $ts-Aqua-Forest-color;
+                }
+                .nav-link {
+                    color: $ts-black-color;
+                    font-size: 0.8rem;
+                    .ts-sign {
+                        float: right;
+                    }
+                    &:hover {
+                        color: $ts-Aqua-Forest-color;
+                        background-color: rgb(238, 238, 238);
+                    }
+                }
+                .list-item {
+                    border: 1px solid rgb(238, 238, 238);
+                    margin: 0.5px 0px;
+                     :active {
+                        color: $ts-white-color !important;
+                        background-color: $ts-Aqua-Forest-color;
+                    }
+                }
+            }
+            .ts-side-grid {
+                .col {
+                    text-align: center;
+                    .product-img {
+                        object-fit: contain;
+                        max-width: 80px;
+                        @include xl-up {
+                            max-width: 100px;
+                        }
+                    }
+                }
+            }
+        }
+        .ts-span {
+            float: right;
+        }
+        .ts-main-img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}

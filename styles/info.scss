@@ -1,0 +1,37 @@
+@import 'commons';
+.ts-bg-section {
+    background: rgb(0, 70, 48);
+    background: linear-gradient(180deg, rgba(0, 70, 48, 0.9444152661064426) 10%, rgba(0, 70, 48, 0.5550595238095238) 45%, rgba(255, 255, 255, 1) 85%);
+}
+
+.ts-thumbnail-1,
+.ts-thumbnail-4 {
+    background-image: url('../assets/images/fjords.jpg');
+    background-size: 600px 400px;
+    object-fit: contain;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+.ts-thumbnail-2,
+.ts-thumbnail-5 {
+    background-image: url('../assets/images/lights.jpg');
+    background-size: 600px 400px;
+    object-fit: contain;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+.ts-thumbnail-3,
+.ts-thumbnail-6 {
+    background-image: url('../assets/images/nature.jpg');
+    background-size: 600px 400px;
+    object-fit: contain;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+.content {
+    padding: 100px;
+    font-size: 19px;
+}

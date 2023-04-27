@@ -1,0 +1,99 @@
+@import "./commons";
+// <*****************[BG SECTION]*****************>
+.ts-content {
+    background-color: $ts-black-color;
+    max-width: 600px;
+    max-height: 150px;
+    margin: auto;
+    position: relative;
+    opacity: 30%;
+}
+
+// <*****************[MAIN SECTION]*****************>
+.ts-about {
+    margin: 20px 15%;
+    @include md-down {
+        margin: 20px 7%;
+    }
+    @include sm-down {
+        margin: 20px;
+    }
+    .content-1 {
+        width: 70%;
+        @include sm-down {
+            margin: 10px auto;
+            text-align: center;
+            width: 100%;
+        }
+    }
+    .ts-headings {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .ts-headings-1 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .ts-text {
+        font-size: 12px;
+    }
+    .ts-border {
+        border: 1px solid $ts-Aqua-Forest-color;
+    }
+    .ts-border-1 {
+        border: 3px solid $ts-Aqua-Forest-color;
+        width: 15%;
+        @include sm-down {
+            margin: auto;
+            margin-bottom: 20px;
+        }
+    }
+    .ts-border-2 {
+        border: 1px solid $ts-Aqua-Forest-color;
+        width: 10%;
+    }
+    .ts-img-tag {
+        max-width: 60px;
+    }
+    .ts-img {
+        max-width: 100%;
+    }
+    .ts-span {
+        .ts-pre-text {
+            font-size: 13px;
+            color: $ts-Aqua-Forest-color;
+            @include sm-down {
+                font-size: 9px;
+            }
+        }
+    }
+    .ts-btn {
+        color: $ts-white-color;
+        background-color: $ts-Sea-Green-color;
+        border: none;
+        border-radius: 0;
+        &:hover {
+            color: $ts-Sea-Green-color;
+            background-color: $ts-white-color;
+            border: 1px solid $ts-Sea-Green-color;
+        }
+    }
+    .ts-img-1 {
+        height: 200px;
+    }
+    .ts-index-products {
+        margin: 20px 15%;
+        @include md-down {
+            margin: 20px 7%;
+        }
+        @include sm-down {
+            margin: 20px;
+        }
+        .ts-col {
+            .product-img {
+                object-fit: contain;
+                width: 60px;
+            }
+        }
+    }
+}
